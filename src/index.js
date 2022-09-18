@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import startButton from "./startcropped.png";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
@@ -10,6 +11,8 @@ root.render(
   <React.StrictMode>
     <Router>
       <App />
+      <div id="blueBox"></div>
+      <img id="startButton" src={startButton} alt="start"></img>
     </Router>
   </React.StrictMode>
 );
